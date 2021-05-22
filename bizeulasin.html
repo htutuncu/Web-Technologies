@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hikmet Tütüncü</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <ul>
+    <li><a href="index.html">Hakkında</a></li>
+    <li><a href="cv.html">Özgeçmiş</a></li>
+    <li><a href="sehrim.html">Şehrim</a></li>
+    <li><a href="mirasimiz.html">Mirasımız</a></li>
+    <li><a href="ilgialani.html">İlgi Alanları</a></li>
+    <li><a class="active" href="bizeulasin.html">Bize Ulaşın</a></li>
+    <br>
+    <li><a href="login.html">Giriş Yap</a></li>
+  </ul>
+
+  <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <h1> Bize Ulaşın !</h1> <br><br>
+    <td width="80%">
+      <hr>
+      <form id="bizeulasin" name="bizeulasin" onSubmit="return myFunc()" method="POST" action="action.php">
+        <table cellspacing="5">
+          <tr>
+            <td>ADI</td>
+            <td>:</td>
+            <td><input type="text" id="ad" name="adi"> </td>
+
+
+          </tr>
+          <tr>
+            <td>SOYAD </td>
+            <td>:</td>
+            <td><input type="text" name="soyadi"> </td>
+
+
+          </tr>
+          <tr>
+            <td>CİNSİYET</td>
+            <td>:</td>
+            <td> <input type="radio" name="cinsiyet">Erkek</td>
+            <td><input type="radio" name="cinsiyet">Kadın</td>
+
+          </tr>
+          <tr>
+            <td>CEP TELEFONU</td>
+            <td>:</td>
+            <td> <input type="number" name="number"> </td>
+
+          </tr>
+          <tr>
+            <td>E-MAİL</td>
+            <td>:</td>
+            <td> <input type="text" name="email"> </td>
+
+          </tr>
+
+          <td>
+            <tr>
+              <td><input type="submit" value="GÖNDER"> </td>
+              <td><input type="reset" value="TEMİZLE"></td>
+              <td></td>
+
+            </tr>
+
+
+          </td>
+
+
+        </table>
+      </form>
+    </td>
+    <script src="formDogrulama.js"></script>
+  </div>
+</body>
+
+</html>
