@@ -1,29 +1,22 @@
 function myFunc() {
-    var formgiris = document.forms["bizeulasin"];
-    var ad = document.getElementById("ad").value;
-    var soyad = document.forms["bizeulasin"]["soyadi"].value;
-    var cinsiyet = document.forms["bizeulasin"]["cinsiyet"].value;
-    var number = document.forms["bizeulasin"]["number"].value;
-    var email = document.forms["bizeulasin"]["email"].value;
-
-    if (ad == "") {
+    if (document.getElementById("ad").value == "") {
       alert("Ad boş bırakılamaz.");
       return false;
     }
-    if (soyad == "") {
+    if (document.getElementById("soyad").value == "") {
       alert("Soyad boş bırakılamaz.");
       return false;
     }
-    if (cinsiyet == "") {
+    if (document.getElementById("cinsiyet") == "") {
       alert("Cinsiyet boş bırakılamaz.");
       return false;
     }
-    if (number == "") {
+    if (document.getElementById("numara") == "") {
       alert("Numara boş bırakılamaz.");
       return false;
     }
-    if (email == "") {
-      alert("email boş bırakılamaz.");
+    if (document.getElementById("email") == "") {
+      alert("E-mail boş bırakılamaz.");
       return false;
     }
     var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
