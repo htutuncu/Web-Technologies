@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hakkında</a></li>
+            <li><a href="cv.html">Özgeçmiş</a></li>
+            <li><a href="sehrim.html">Şehrim</a></li>
+            <li><a href="mirasimiz.html">Mirasımız</a></li>
+            <li><a href="ilgialani.html">İlgi Alanları</a></li>
+            <li><a href="bizeulasin.html">İletişim</a></li>
+            <br>
+            <li><a class="active" href="login.html">Giriş Yap</a></li>
+        </ul>
+    </nav>
+    
+
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <header>
+            <h1>Kullanıcı Girişi Sayfasına Hoşgeldiniz!</h1>
+            
+        </header>
+
+        <form action="girisDogrulama.php" method="post">
+            <table cellspacing="5">
+                <tr>
+                    <td>Kullanıcı Adı</td>
+                    <td>:</td>
+                    <td><input type="email" placeholder="Kullanıcı Adınız" id="uname" name="uname" required></br> </td>
+                </tr>
+                <tr>
+                    <td>Şifre </td>
+                    <td>:</td>
+                    <td><input type="password" placeholder="Şifreniz" id="psw" name="psw" required></br></td>
+                <td>
+                    <tr>
+                        <td><input type="submit" value="Giriş Yap"> </td>
+                        <td></td>
+                    </tr>
+                </td>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
