@@ -24,6 +24,8 @@
         </ul>
     </nav>
     
+        
+    
 
     <div style="margin-left:25%;padding:1px 16px;height:1000px;">
         <header>
@@ -31,25 +33,27 @@
             
         </header>
 
-        <form action="girisDogrulama.php" method="post">
-            <table cellspacing="5">
-                <tr>
-                    <td>Kullanıcı Adı</td>
-                    <td>:</td>
-                    <td><input type="email" placeholder="Kullanıcı Adınız" id="uname" name="uname" required></br> </td>
-                </tr>
-                <tr>
-                    <td>Şifre </td>
-                    <td>:</td>
-                    <td><input type="password" placeholder="Şifreniz" id="psw" name="psw" required></br></td>
-                <td>
-                    <tr>
-                        <td><input type="submit" value="Giriş Yap"> </td>
-                        <td></td>
-                    </tr>
-                </td>
-            </table>
-        </form>
+        
+
+        <form class="form-horizontal" action="girisDogrulama.php" method="post">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="uname" name="uname" placeholder="E-mailiniz" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Password:</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="psw" name="psw" placeholder="Şifreniz" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">Giriş Yap</button>
+              </div>
+            </div>
+          </form>
     </div>
 </body>
 

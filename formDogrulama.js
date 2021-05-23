@@ -6,8 +6,6 @@ function myFunc() {
     var number = document.forms["bizeulasin"]["number"].value;
     var email = document.forms["bizeulasin"]["email"].value;
 
-
-
     if (ad == "") {
       alert("Ad boş bırakılamaz.");
       return false;

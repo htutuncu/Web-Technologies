@@ -7,19 +7,14 @@ fetch("https://api-football-beta.p.rapidapi.com/players/topscorers?season=2020&l
 })
 .then(response => response.json())
 .then(response => {
+  
+  let output = "<table><tr><th>Futbolcu</th><th>Gol Sayısı</th><tr>";
   for(var i=0; i<20; i++){
-    console.log(response.response[i].player.name);
-    console.log(response.response[i].statistics[0].goals.total);
+    output += `<tr><td> ${response.response[i].player.name}</td>  <td style="text-align: center"> ${response.response[i].statistics[0].goals.total}</td></tr>  `
   }
-
-  let output = "<ol>";
-  for(var i=0; i<20; i++){
-    output += `<li> ${response.response[i].player.name}  - ${response.response[i].statistics[0].goals.total}`
-  }
-  output += "</ol>";
+  output += "</table>";
 
   document.getElementById("output").innerHTML += output;
-	  
 })
 .catch(err => {
 	console.error(err);
